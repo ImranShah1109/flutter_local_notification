@@ -11,6 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // for remove the debug label from top right corner
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Local Notification',
       theme: ThemeData(
         primarySwatch: Colors.blue,
