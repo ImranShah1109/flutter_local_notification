@@ -30,6 +30,7 @@ class NotificationService{
         (NotificationResponse notificationResponse) async{}
     );
 
+    // notification detail about android and ios
     notificationDetails(){
       return const NotificationDetails(
         android: AndroidNotificationDetails(
