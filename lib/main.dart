@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_noti/services/notifi_services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,7 +46,12 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: (){},
+          onPressed: (){
+            NotificationService().showNotification(
+                title: 'Sample title',
+                body: "It's works!"
+              );
+          },
           child:const Text('Show Notifications'),
         )
       )
